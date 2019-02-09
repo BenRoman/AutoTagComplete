@@ -1,0 +1,343 @@
+﻿
+<style>
+    .tags-wrapper {
+        background: white;
+        overflow: hidden;
+        width: 300px;
+        background-image: -webkit-linear-gradient(top, rgb(238, 238, 238) 1%, white 15%);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    }
+
+        .tags-wrapper ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .tags-wrapper li {
+            float: left;
+        }
+
+            .tags-wrapper li.tag {
+                font-family: verdana;
+                font-size: 11px;
+                border-radius: 3px;
+                list-style: none;
+                background-clip: padding-box;
+                background-color: rgb(228, 228, 228);
+                background-image: -webkit-linear-gradient(top, rgb(244, 244, 244) 20%, rgb(240, 240, 240) 50%, rgb(232, 232, 232) 52%, rgb(238, 238, 238) 100%);
+                box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+                color: rgb(51, 51, 51);
+                border: 1px solid rgb(170, 170, 170);
+                line-height: 13px;
+                padding: 1px 3px 3px 5px;
+                margin: 3px 0 3px 5px;
+            }
+
+            .tags-wrapper li a {
+                text-decoration: none;
+                color: white;
+                padding: 2px;
+                display: inline-block;
+                margin-left: 6px;
+                color: rgb(51, 51, 51);
+            }
+
+                .tags-wrapper li a:hover {
+                    color: #222;
+                }
+
+        .tags-wrapper input {
+            display: none;
+        }
+
+        .tags-wrapper li.tags-input {
+            white-space: nowrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tags-wrapper li input {
+            display: block;
+            background: trasparent;
+            outline: none;
+            border: none;
+            font-size: 11px;
+            height: auto;
+            width: 30px;
+            margin: 4px;
+        }
+
+        .tags-wrapper .autofill-bg {
+            position: relative;
+            top: 4px;
+        }
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+
+<input type="text" id="testInput" placeholder="enter city"/>
+
+<input type="button" id="sender" value="OK" />
+
+
+@section scripts
+{
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $.fn.autofill = function (opts) {
+                return this.each(function () {
+                    var self = this,
+                        usingTags = $(this).parent().hasClass("tags-wrapper");
+
+                    if (!opts) opts = {};
+                    // if were combined with tagging
+                    if (usingTags) {
+                        self = $(this).parent().find("li input");
+                    }
+
+                    // make this guy see through
+                    $(self).css({
+                        "background": "transparent",
+                        "position": "absolute",
+                        "z-index": 2,
+                        "outline": "none"
+                    });
+
+                    // create the div wrapper
+                    var $wrapper = $("<div class='autofill-wrapper'></div>").css("position", "relative");
+                    // wrap
+                    $(self).wrap($wrapper);
+                    // reset wrapper cuz now its doc fragment?
+                    $wrapper = $(self).parent();
+                    // make the bg input
+                    var color = opts.color || "rgba(214,215,220,1)";
+                    var top = opts.top || -4;
+                    var $bg = $("<input type='text' class='autofill-bg' disabled/>").css({
+                        "color": color,
+                        "top": top,
+                        "outline": "none"
+                    });
+
+
+
+                    // set data
+                    $bg.data("data", opts.data);
+
+                    var bg = $bg[0];
+                    // add classes
+                    if (opts.classList) $bg.addClass(opts.classList);
+                    // add the bg input (this not being absolute keeps the spacing)
+                    $wrapper.append($bg);
+
+                    // add listeners for data
+                    if (opts.data) {
+
+                        // we have to do this here because of tab
+                        $(self).on("keydown", function (e) {
+                            if (!!~[39, 13, 9].indexOf(e.keyCode)) {
+                                e.preventDefault();
+                                this.value = bg.value;
+                                bg.value = "";
+                            }
+                        });
+
+                        // keyup for letters
+                        $(self).on("keyup", function (e) {
+                            var found = 0, rx, val = this.value;
+                            if (val) {
+                                opts.data.forEach(function (term) {
+                                    rx = new RegExp("^" + val);
+                                    if (rx.test(term)) {
+                                        bg.value = term;
+                                        found++;
+                                    }
+                                });
+
+                                // if no matches
+                                if (!found) bg.value = "";
+
+                                // blank
+                            } else {
+                                bg.value = "";
+                            }
+                        });
+                    }
+
+                });
+            }
+        })(jQuery);
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+            $.fn.tags = function (opts) {
+                var selector = this.selector;
+                function update($original) {
+                    var all = [];
+                    var list = $original.closest(".tags-wrapper").find("li.tag span").each(function () {
+                        all.push($(this).text());
+                    });
+                    all = all.join(",");
+                    $original.val(all);
+                }
+
+                return this.each(function () {
+                    var self = this,
+                        $self = $(this),
+                        $wrapper = $("<div class='tags-wrapper'><ul></ul></div");
+                    tags = $self.val(),
+                        tagsArray = tags.split(","),
+                        $ul = $wrapper.find("ul");
+
+
+
+                    // make sure have opts
+                    if (!opts) opts = {};
+                    opts.maxSize = 50;
+
+                    // add tags to start
+                    tagsArray.forEach(function (tag) {
+                        if (tag) {
+                            $ul.append("<li class='tag'><span>" + tag + "</span><a href='#'>x</a></li>");
+                        }
+                    });
+
+
+                    // get classes on this element
+                    if (opts.classList) $wrapper.addClass(opts.classList);
+
+                    // add input
+                    $ul.append("<li class='tags-input'><input type='text' class='tags-secret'/></li>");
+                    // set to dom
+                    $self.after($wrapper);
+                    // add the old element
+                    $wrapper.append($self);
+
+                    // size the text
+                    var $input = $ul.find("input"),
+                        size = parseInt($input.css("font-size")) - 4;
+
+                    // delete a tag
+                    $wrapper.on("click", "li.tag a", function (e) {
+                        e.preventDefault();
+                        $(this).closest("li").remove();
+                        $self.trigger("tagRemove", $(this).closest("li").find("span").text());
+                        update($self);
+                    });
+
+                    // backspace needs to check before keyup
+                    $wrapper.on("keydown", "li input", function (e) {
+                        // backspace
+                        if (e.keyCode == 8 && !$input.val()) {
+                            var $li = $ul.find("li.tag:last").remove();
+                            update($self);
+                            $self.trigger("tagRemove", $li.find("span").text());
+                        }
+                        // prevent for tab
+                        if (e.keyCode == 9) {
+                            e.preventDefault();
+                        }
+
+                    });
+
+                    // as we type
+                    $wrapper.on("keyup", "li input", function (e) {
+                        e.preventDefault();
+                        $ul = $wrapper.find("ul");
+                        var $next = $input.next(),
+                            usingAutoFill = $next.hasClass("autofill-bg"),
+                            $inputLi = $ul.find("li.tags-input");
+
+                        // regular size adjust
+                        $input.width($input.val().length * (size));
+
+                        // if combined with autofill, check the bg for size
+                        if (usingAutoFill) {
+                            $next.width($next.val().length * (size));
+                            $input.width($next.val().length * (size));
+                            // make sure autofill doesn't get too big
+                            if ($next.width() < opts.maxSize) $next.width(opts.maxSize);
+                            var list = $next.data().data;
+                        }
+
+                        // make sure we don't get too high
+                        if ($input.width() < opts.maxSize) $input.width(opts.maxSize);
+
+                        // tab, comma, enter
+                        if (!!~[9, 188, 13].indexOf(e.keyCode)) {
+                            var val = $input.val().replace(",", "");
+                            var otherCheck = true;
+
+                            // requring a tag to be in autofill
+                            if (opts.requireData && usingAutoFill) {
+                                if (!~list.indexOf(val)) {
+                                    otherCheck = false;
+                                    $input.val("");
+                                }
+                            }
+
+                            // unique
+                            if (opts.unique) {
+                                // found a match already there
+                                if (!!~$self.val().split(",").indexOf(val)) {
+                                    otherCheck = false;
+                                    $input.val("");
+                                    $next.val("");
+                                }
+                            }
+
+                            // max tags
+                            if (opts.maxTags) {
+                                if ($self.val().split(",").length == opts.maxTags) {
+                                    otherCheck = false;
+                                    $input.val("");
+                                    $next.val("");
+                                }
+                            }
+
+                            // if we have a value, and other checks pass, add the tag
+                            if (val && otherCheck) {
+                                // place the new tag
+                                $inputLi.before("<li class='tag'><span>" + val + "</span><a href='#'>x</a></li>");
+                                // clear the values
+                                $input.val("");
+                                if (usingAutoFill) $next.val("");
+                                update($self);
+                                $self.trigger("tagAdd", val);
+                            }
+                        }
+
+                    });
+
+                });
+            }
+        })(jQuery);
+    </script>
+    <script>
+        var cities = [];
+
+        $(function () {
+
+             $.getJSON('@Url.Action("AllCities")')
+                    .done(function (data) {
+                        $.each(data, function (i, state) {
+                            cities.push(state);
+                        });
+                    })
+
+            $("#testInput").tags({
+                unique: true
+            }).autofill({
+                data: cities
+            });
+        });
+
+        $('#sender').on('click', function () {
+            console.log($('#testInput').val());
+        })
+    </script>
+}
+
+

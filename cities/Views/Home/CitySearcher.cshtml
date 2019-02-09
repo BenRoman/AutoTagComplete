@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "CitySearcher";
+}
+
+<h2>CitySearcher</h2>
+
+<style>
+    h4 {
+        color: red;
+    }
+    .placeholder {
+        position: relative;
+    }
+
+    .placeholder::after {
+        position: absolute;
+        left: 5px;
+        top: 3px;
+        content: attr(data-placeholder);
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+</style>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2" id="lab">City Name</label>
+            <div class="col-md-10">
+                <div class="placeholder" id="plhd" data-placeholder="select city">
+                    <input type="text" id="city"  placeholder="Odssa" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+@section scripts
+{
+    <script type="text/javascript">
+        $(function() {
+            $('#city').on('input', function() {
+                var inputCity = $('#city');
+
+                console.log("OK");
+                //retrieve selected country
+                var valueOfInput = inputCity.val();
+                if (valueOfInput.length > 0) {
+                    // retrieve data using a Url.Action() to construct url
+                    $.getJSON('@Url.Action("GetCities")', {
+                        str: valueOfInput
+                    })
+                        .done(function (data) {
+                           console.log("done")
+                            $('#plhd').attr("data-placeholder", data);
+                        
+                    })
+                    .fail(function (jqxhr, textStatus, error) {
+                        var err = textStatus + ", " + error;
+                        console.log("Request Failed: " + err);
+                    });
+                }
+            });
+        })
+    </script>
+}
+

@@ -1,0 +1,174 @@
+C:\Users\romas\source\repos\cities\cities\bin\cities.dll.config
+C:\Users\romas\source\repos\cities\cities\bin\cities.dll
+C:\Users\romas\source\repos\cities\cities\bin\cities.pdb
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csc.exe
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csc.exe.config
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csc.rsp
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csi.exe
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csi.exe.config
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\csi.rsp
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.AppContext.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Console.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.IO.Compression.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.IO.Pipes.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Claims.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.ValueTuple.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Xml.XPath.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\vbc.exe
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\vbc.exe.config
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\vbc.rsp
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\VBCSCompiler.exe
+C:\Users\romas\source\repos\cities\cities\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\romas\source\repos\cities\cities\bin\Antlr3.Runtime.dll
+C:\Users\romas\source\repos\cities\cities\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\romas\source\repos\cities\cities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\romas\source\repos\cities\cities\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\romas\source\repos\cities\cities\bin\Newtonsoft.Json.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Helpers.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Mvc.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Optimization.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Razor.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.Deployment.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.Razor.dll
+C:\Users\romas\source\repos\cities\cities\bin\WebGrease.dll
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Helpers.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Mvc.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Optimization.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.Razor.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.Deployment.xml
+C:\Users\romas\source\repos\cities\cities\bin\System.Web.WebPages.Razor.xml
+C:\Users\romas\source\repos\cities\cities\bin\Newtonsoft.Json.xml
+C:\Users\romas\source\repos\cities\cities\bin\Antlr3.Runtime.pdb
+C:\Users\romas\source\repos\cities\cities\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\romas\source\repos\cities\cities\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\romas\source\repos\cities\cities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.csprojAssemblyReference.cache
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.csproj.CoreCompileInputs.cache
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.csproj.CopyComplete
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.dll
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.pdb
+C:\Users\romas\source\repos\cities\cities\bin\EntityFramework.dll
+C:\Users\romas\source\repos\cities\cities\bin\EntityFramework.SqlServer.dll
+C:\Users\romas\source\repos\cities\cities\bin\EntityFramework.xml
+C:\Users\romas\source\repos\cities\cities\bin\EntityFramework.SqlServer.xml
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.Migrations.InitialCreate.resources
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.csproj.GenerateResource.cache
+C:\Users\romas\source\repos\cities\cities\obj\Debug\cities.Migrations.MigrateDB.resources
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\cities.dll.config
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\cities.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\cities.pdb
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csc.exe
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csc.exe.config
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csc.rsp
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csi.exe
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csi.exe.config
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\csi.rsp
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.AppContext.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Console.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.IO.Compression.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.IO.Pipes.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Claims.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.ValueTuple.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Xml.XPath.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\vbc.exe
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\vbc.exe.config
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\vbc.rsp
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\VBCSCompiler.exe
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Antlr3.Runtime.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\EntityFramework.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\EntityFramework.SqlServer.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Newtonsoft.Json.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Helpers.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Mvc.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Optimization.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Razor.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.Deployment.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.Razor.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\WebGrease.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\EntityFramework.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\EntityFramework.SqlServer.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Helpers.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Mvc.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Optimization.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.Razor.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.Deployment.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Web.WebPages.Razor.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Newtonsoft.Json.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Antlr3.Runtime.pdb
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.csprojAssemblyReference.cache
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.Migrations.InitialCreate.resources
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.Migrations.MigrateDB.resources
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.csproj.GenerateResource.cache
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.csproj.CoreCompileInputs.cache
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.csproj.CopyComplete
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.dll
+C:\Users\romas\OneDrive\Робочий стіл\AutoTagComplete-master\cities\obj\Debug\cities.pdb

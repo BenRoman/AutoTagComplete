@@ -1,0 +1,65 @@
+﻿
+
+
+
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Country Name</label>
+            <div class="col-md-10">
+                <div>
+                    @Html.DropDownList("country",
+                                                    Model as SelectList,
+                                                    "--- Please select ---",
+                                                    new { id = "country", @class= "form-control" } )
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">City Name</label>
+            <div class="col-md-10">
+                <div>
+                    <select name="cityName" id="state" disabled="disabled" class="form-control"></select>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function() {
+            $('#country').on('change', function() {
+                var stateDropdown = $('#state');   
+                stateDropdown.prop('disabled', 'disabled');
+
+                stateDropdown.empty();
+                var country = $(this).val();
+                if (country.length > 0) {
+
+                    $.getJSON('@Url.Action("GetStates")', {
+                        country: country
+                    })
+                    .done(function (data) {
+                        stateDropdown.prop('disabled', false);
+                        $.each(data, function (i, state) {
+                            var option = $('<option />').html(state);
+                            stateDropdown.append(option);
+                        });
+                    })
+                    .fail(function (jqxhr, textStatus, error) {
+                        var err = textStatus + ", " + error;
+                        console.log("Request Failed: " + err);
+                    });
+                }
+            });
+        })
+    </script>
+}
